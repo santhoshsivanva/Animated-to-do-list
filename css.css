@@ -29,13 +29,44 @@ body{
         /* display: inline-block; */
         width: 70px;
         position: relative;
-        left: 80px;
+        left: 60px;
         bottom: 30px;
 }
 
 :root {
     --animate-delay: 2s;
   }
+
+input[type = "text"]{
+    cursor:pointer;
+    border:3px solid black;
+    border-radius:4px;
+}
+
+
+input[type = "text"]:active{
+    transform:scale(2);
+}
+
+
+ul li{
+    margin-left: 0px;
+    list-style: none;
+    text-align:start;
+    position: relative;
+    right: 70px;
+    padding-bottom: 10px;
+    font-size: medium;
+    font-weight:800;
+    color: black;
+}
+
+
+.delClass:hover{
+    box-shadow: 2px 3px 3px black;
+}
+
+
 /* media query */
 
 @media only screen and (max-width:375px){
@@ -72,30 +103,3 @@ body{
     left:80px;
 }
 }
-
-
-input[type = "text"]{
-    cursor:pointer;
-    border:3px solid black;
-    border-radius:4px;
-}
-
-
-input[type = "text"]:active{
-    transform:scale(2);
-}
-
-
-
-ul li{
-    list-style: none;
-    margin-left: 0px;
-    position: relative;
-    right: 20px;
-    padding-bottom: 10px;
-    font-size: medium;
-    font-weight: bold;
-    color: white;
-}
-
-
